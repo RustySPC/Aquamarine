@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Aquamarine»</title>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220607002645">
+</head>
+
+<body>
+	<div class="rootpage">
+
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="home2.html">Главная Авторизирован</a></li>
+			<li><a target="_blank" href="category.html">Категория</a></li>
+			<li><a target="_blank" href="product.html">Карточка товара</a></li>
+			<li><a target="_blank" href="wholesalers.html">Оптовикам</a></li>
+			<li><a target="_blank" href="newspaper.html">Новости и статьи</a></li>
+			<li><a target="_blank" href="favoriteVoid.html">Избранное</a></li>
+			<li><a target="_blank" href="basket.html">Корзина</a></li>
+			<li><a target="_blank" href="basketVoid.html">Корзина (пусто)</a></li>
+			<li><a target="_blank" href="story.html">История заказов</a></li>
+			<li><a target="_blank" href="login.html">Вход</a></li>
+			<li><a target="_blank" href="register.html">Регистрация</a></li>
+			<li><a target="_blank" href="registerError.html">Регистрация | ошибка</a></li>
+			<li><a target="_blank" href="registerSuccess.html">Регистрация прошла успешно!</a></li>
+			<li><a target="_blank" href="bonuses.html">Бонусы и акции</a></li>
+			<li><a target="_blank" href="comparisonVoid.html">Сравнение пусто</a></li>
+			<li><a target="_blank" href="order.html">Оформление заказа</a></li>
+			<li><a target="_blank" href="profile.html">Профиль</a></li>
+			<li><a target="_blank" href="article.html">Статья</a></li>
+		</ol>
+
+	</div>
+	<section class="modal" id="card">
+		<div class="modal__icon">
+			<img data-src="img/modal.svg" alt="">
+		</div>
+		<div class="modal__title">
+			Товар добавлен в корзину!
+		</div>
+		<div class="modal__btns">
+			<div class="modal__btn"><a href="" class="_btn-white">Продолжить покупки</a></div>
+			<div class="modal__btn"><a href="" class="_btn-blue">Перейти в корзину</a></div>
+		</div>
+	</section>
+	<script src="js/app.min.js?_v=20220607002645"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20220607002645"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20220607002645" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220607002645">
+</body>
+
+
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #1771f1;
+		background-color: rgb(219, 245, 252);
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #1771f1
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #1771f1;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #1771f1;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #1771f1;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+</style>
+<script src="js/app.min.js?_v=20220607002645"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20220607002645"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20220607002645" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220607002645">
+
+</html>
